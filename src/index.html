@@ -1,24 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="edge">
-    <title>Start</title>
+    <title>Invicta</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="wrapper">
       <!-- Header -->
-      <header>
-        Header
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque quam, eligendi perspiciatis vero dolor, nam incidunt alias iusto voluptate soluta quae, sint inventore minima, tempore aliquid amet nemo similique!
+      <header class="page-header">
+        <nav class="page-header__nav">
+          <div class="page-header__logo">
+            <a href="#" class="logo">
+              <img src="img/logo.png" alt="Logo" class="logo__pic" width="84" height="34">
+            </a>
+          </div>
+          <div class="page-header__phone">
+            <a href="tel:+38(066)8395560" class="phone">+38(066) 83 95 560</a>
+          </div>
+          <div class="page-header__menu">
+            <button class="burger-btn">Меню</button>
+            <ul class="menu">
+              <li class="menu__item"><a href="#" class="menu__link">Характеристики</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="page-header__main">
+          <div class="page-header__title">
+            <h1 class="page-title">
+              Элитные часы invicta
+            </h1>
+            <p class="page-subtitle">
+              Дарим 10 лет гарантии каждому покупателю
+            </p>
+          </div>
+          <div class="brand">
+            <div class="brand__cover">
+              <p class="brand__name">
+              <span class="brand__text">pro</span>
+              <span class="brand__text brand-text__bordered"><small>6981</small></span>
+              <span class="brand__text">diver</span>
+              </p>
+              <img class="brand__pic" src="img/watch.png" alt="" width="264" height="370">
+              <b class="brand__price">11999грн</b>
+              <del class="brand__price brand__price--old">13999грн</del>
+            </div>
+            <button class="brand__btn page-btn">Заказать</button>
+          </div>
+        </div>
       </header><!-- Header end -->
 
       <!-- Main -->
-      <main>
-        Main
+      <main class="page-main">
+        <section class="features">
+          <h1 class="visually-hidden">Преимущества</h1>
+          <ul class="features__list">
+            <li class="features__item"><span class="features__text">Только оригинальный  товар</span></li>
+            <li class="features__item"><span class="features__text">Гарантия 10 лет на часы</span></li>
+            <li class="features__item"><span class="features__text">Оплата при получении</span></li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="section-title">
+            Индивидуальный стиль и элегантность
+          </h2>
+          <ul class="about__descr">
+            <li class="section-text">
+              Модели Invicta можно по праву назвать элегантно-спортивными.Материалы,являются водонепроницаемыми и отличаются высоким уровнем прочности.
+            </li>
+            <li class="section-text">
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              Invicta Pro Diver воплощает  трендовые направление — Sport de Luxe.Часы марки Invicta имеют десятилетнюю международную гарантию и производятся на территории Швейцарии.
+            </li>
+          </ul>
+          <div class="about__video">
+            <a href="#" class="about__video-link">
+              Смотреть обзор
+            </a>
+          </div>
+        </section>
+        <section class="about about--light">
+          <h2 class="section-title">
+            КОРПУС С ИДЕАЛЬНИМ ОЧЕРТАНИЯМИ
+          </h2>
+          <ul class="about__descr about__descr--bordered">
+            <li class="section-text">
+              Модели Invicta можно по праву назвать элегантно-спортивными.Материалы,являются водонепроницаемыми и отличаются высоким уровнем прочности.
+            </li>
+            <li class="section-text">
+              <b class="section-text__title">Циферблат</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              <b class="section-text__title">Механизм</b>
+              Invicta Pro Diver воплощает  трендовые направление — Sport de Luxe.Часы марки Invicta имеют десятилетнюю международную гарантию и производятся на территории Швейцарии.
+            </li>
+          </ul>
+        </section>
+        <section class="about">
+          <h2 class="section-title">
+            надежный и стильный  браслет
+          </h2>
+          <ul class="about__descr">
+            <li class="section-text">
+              Модели Invicta можно по праву назвать элегантно-спортивными.Материалы,являются водонепроницаемыми и отличаются высоким уровнем прочности.
+            </li>
+            <li class="section-text">
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+          </ul>
+          <button class="about__btn page-btn">Заказать</button>
+        </section>
+        <section class="order">
+          <h2 class="section-title">
+            Заказать Invicta  Pro Diver 6981
+          </h2>
+          <b class="order__promo">
+            Дарим 10 лет гарантии  каждому покупателю
+          </b>
+          <div class="order__form-wrap">
+            <form action="#" class="order__form page-form">
+              <label for="user-name" class="page-form__label">Ваше имя:</label>
+              <input type="text" id="user-name" class="page-form__input" placeholder="Ваше имя">
+              <label for="user-phone" class="page-form__label">Ваше имя:</label>
+              <input type="tel" id="user-phone" class="page-form__input" placeholder="Ваш телефон">
+              <button class="form__btn page-btn" type="submit">Заказать</button>
+            </form>
+          </div>
+          <img src="img/order-watch.jpg" alt="" width="189" height="245">
+        </section>
+        <section class="about">
+          <h2 class="section-title">
+            Часы Invicta Продуманые до мелочей
+          </h2>
+          <ul class="about__descr">
+            <li class="section-text">
+              <b class="section-text__title section-text__title--iconed">Тип механизма</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              <b class="section-text__title section-text__title--iconed">Тип стекла</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              <b class="section-text__title section-text__title--iconed">Материал корпуса</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              <b class="section-text__title section-text__title--iconed">Материал браслета</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              <b class="section-text__title section-text__title--iconed">Габариты</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+            <li class="section-text">
+              <b class="section-text__title section-text__title--iconed">Функции</b>
+              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+            </li>
+          </ul>
+        </section>
+        <setion class="gallery">
+          <h2 class="section-title">
+            Галерея
+          </h2>
+          <ul class="gallery__list">
+            <li class="gallery__foto">
+              <img src="img/gallery/01.jpg" alt="" class="gallery__img" width="455" height="337">
+            </li>
+            <li class="gallery__foto">
+              <img src="img/gallery/02.jpg" alt="" class="gallery__img" width="217" height="185">
+            </li>
+            <li class="gallery__foto">
+              <img src="img/gallery/03.jpg" alt="" class="gallery__img" width="217" height="185">
+            </li>
+            <li class="gallery__foto">
+              <img src="img/gallery/04.jpg" alt="" class="gallery__img" width="217" height="185">
+            </li>
+            <li class="gallery__foto">
+              <img src="img/gallery/05.jpg" alt="" class="gallery__img" width="217" height="185">
+            </li>
+          </ul>
+          <p>Галерея поставить!!!!</p>
+          <a href="#" class="gallery__link">
+            Показать все
+          </a>
+        </setion>
+        <section class="company">
+          <h2 class="section-title">
+            О компании invicta
+          </h2>
+          <p class="company__descr">Компания имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру</p>
+          <div class="company__video">
+            <iframe width="445" height="312" src="https://www.youtube.com/embed/OeQ8_M_Un5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </section>
+        <section class="reviews">
+          <h2 class="section-title">
+            Отзывы о нас
+          </h2>
+          <ul class="reviews__slider">
+            <li class="reviews__slide">
+              <img src="img/reviews/01.png" alt="" class="reviews__author-logo" width="70" height="70">
+              <h4 class="reviews__author">
+                Иван Кулик
+              </h4>
+              <span class="reviews__author-descr">Заказчик</span>
+              <blockquote class="reviews__feedback">
+                Супер покупка! Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Алфавит живет журчит грустный переулка вершину он, коварный дорогу составитель снова, лучше большого коварных сбить! Заманивший залетают выйти что имеет!
+              </blockquote>
+            </li>
+            <li class="reviews__slide">
+              <img src="img/reviews/02.png" alt="" class="reviews__author-logo" width="70" height="70">
+              <h4 class="reviews__author">
+                Иван Кулик
+              </h4>
+              <span class="reviews__author-descr">Заказчик</span>
+              <blockquote class="reviews__feedback">
+                Супер покупка! Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Алфавит живет журчит грустный переулка вершину он, коварный дорогу составитель снова, лучше большого коварных сбить! Заманивший залетают выйти что имеет!
+              </blockquote>
+            </li>
+            <li class="reviews__slide">
+              <img src="img/reviews/03.png" alt="" class="reviews__author-logo" width="70" height="70">
+              <h4 class="reviews__author">
+                Иван Кулик
+              </h4>
+              <span class="reviews__author-descr">Заказчик</span>
+              <blockquote class="reviews__feedback">
+                Супер покупка! Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Алфавит живет журчит грустный переулка вершину он, коварный дорогу составитель снова, лучше большого коварных сбить! Заманивший залетают выйти что имеет!
+              </blockquote>
+            </li>
+          </ul>
+          <button class="reviews__btn page-btn">Оставить отзыв</button>
+        </section>
       </main><!-- Main end -->
 
       <!-- Footer -->
