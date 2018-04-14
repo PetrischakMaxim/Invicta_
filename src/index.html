@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="edge">
     <title>Invicta</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
 
   <body>
@@ -14,22 +14,22 @@
       <header class="page-header">
         <nav class="page-header__nav">
           <div class="page-header__logo">
-            <a href="#" class="logo">
-              <img src="img/logo.png" alt="Logo" class="logo__pic" width="84" height="34">
+            <a href="#" class="logo" title="Логотип">
+              <img src="img/logo.png" alt="Логотип" class="logo__pic" width="84" height="34">
             </a>
           </div>
           <div class="page-header__phone">
             <a href="tel:+38(066)8395560" class="phone">+38(066) 83 95 560</a>
           </div>
-          <div class="page-header__menu">
-            <button class="burger-btn">Меню</button>
-            <ul class="menu">
+          <nav class="menu">
+            <button class="menu__toggler">Меню</button>
+            <ul class="menu__list">
               <li class="menu__item"><a href="#" class="menu__link">Характеристики</a></li>
               <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
               <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
             </ul>
-          </div>
+          </nav>
         </nav>
         <div class="page-header__main">
           <div class="page-header__title">
@@ -123,15 +123,15 @@
           <h2 class="section-title">
             Заказать Invicta  Pro Diver 6981
           </h2>
-          <b class="order__promo">
+          <b class="section-promo">
             Дарим 10 лет гарантии  каждому покупателю
           </b>
           <div class="order__form-wrap">
             <form action="#" class="order__form page-form">
               <label for="user-name" class="page-form__label">Ваше имя:</label>
-              <input type="text" id="user-name" class="page-form__input" placeholder="Ваше имя">
+              <input type="text" id="user-name" class="page-form__input" placeholder="Ваше имя" required>
               <label for="user-phone" class="page-form__label">Ваше имя:</label>
-              <input type="tel" id="user-phone" class="page-form__input" placeholder="Ваш телефон">
+              <input type="tel" id="user-phone" class="page-form__input" placeholder="Ваш телефон" required>
               <button class="form__btn page-btn" type="submit">Заказать</button>
             </form>
           </div>
@@ -207,45 +207,98 @@
           <h2 class="section-title">
             Отзывы о нас
           </h2>
-          <ul class="reviews__slider">
-            <li class="reviews__slide">
-              <img src="img/reviews/01.png" alt="" class="reviews__author-logo" width="70" height="70">
-              <h4 class="reviews__author">
+          <ul class="slider">
+            <li class="slider__item">
+              <img src="img/reviews/01.png" alt="" class="slider__item-logo" width="70" height="70">
+              <h4 class="slider__author">
                 Иван Кулик
               </h4>
-              <span class="reviews__author-descr">Заказчик</span>
-              <blockquote class="reviews__feedback">
+              <span class="slider__author-descr">Заказчик</span>
+              <blockquote class="slider__feedback">
                 Супер покупка! Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Алфавит живет журчит грустный переулка вершину он, коварный дорогу составитель снова, лучше большого коварных сбить! Заманивший залетают выйти что имеет!
               </blockquote>
             </li>
-            <li class="reviews__slide">
-              <img src="img/reviews/02.png" alt="" class="reviews__author-logo" width="70" height="70">
-              <h4 class="reviews__author">
+            <li class="slider__item">
+              <img src="img/reviews/02.png" alt="" class="slider__item-logo" width="70" height="70">
+              <h4 class="slider__author">
                 Иван Кулик
               </h4>
-              <span class="reviews__author-descr">Заказчик</span>
-              <blockquote class="reviews__feedback">
+              <span class="slider__author-descr">Заказчик</span>
+              <blockquote class="slider__feedback">
                 Супер покупка! Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Алфавит живет журчит грустный переулка вершину он, коварный дорогу составитель снова, лучше большого коварных сбить! Заманивший залетают выйти что имеет!
               </blockquote>
             </li>
-            <li class="reviews__slide">
-              <img src="img/reviews/03.png" alt="" class="reviews__author-logo" width="70" height="70">
-              <h4 class="reviews__author">
+            <li class="slider__item">
+              <img src="img/reviews/03.png" alt="" class="slider__item-logo" width="70" height="70">
+              <h4 class="slider__author">
                 Иван Кулик
               </h4>
-              <span class="reviews__author-descr">Заказчик</span>
-              <blockquote class="reviews__feedback">
+              <span class="slider__author-descr">Заказчик</span>
+              <blockquote class="slider__feedback">
                 Супер покупка! Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Алфавит живет журчит грустный переулка вершину он, коварный дорогу составитель снова, лучше большого коварных сбить! Заманивший залетают выйти что имеет!
               </blockquote>
             </li>
           </ul>
+          <div class="slider__controls">
+              <button class="slider__btn">1</button>
+              <button class="slider__btn">2</button>
+              <button class="slider__btn">3</button>
+          </div>
           <button class="reviews__btn page-btn">Оставить отзыв</button>
+        </section>
+        <section class="benefits">
+          <h2 class="section-title">
+            как мы работаем
+          </h2>
+          <b class="section-promo">
+            Бесплатная доставка по всей Украине
+          </b>
+          <h4 class="benefits__title">
+              Как происходит заказ:
+          </h4>
+          <ol class="benefits__list">
+            <li class="benefits__item">
+              Покупатель оставляет заявку
+            </li>
+            <li class="benefits__item">
+              С ним связывается менеджер, консультирует  по товару
+            </li>
+            <li class="benefits__item">
+              Товар отправляется почтой
+            </li>
+          </ol>
+          <b class="section-promo section-promo--small">10 лет гарантии  каждому покупателю  </b>
+          <div class="benefits__form-wrap">
+            <form action="#" class="page-form">
+              <label for="user-name" class="page-form__label">Ваше имя:</label>
+              <input type="text" id="user-name" class="page-form__input" placeholder="Ваше имя" required>
+              <label for="user-phone" class="page-form__label">Ваше имя:</label>
+              <input type="tel" id="user-phone" class="page-form__input" placeholder="Ваш телефон" required>
+              <button class="form__btn page-btn" type="submit">Заказать</button>
+            </form>
+          </div>
         </section>
       </main><!-- Main end -->
 
       <!-- Footer -->
-      <footer>
-        Footer
+      <footer class="page-footer">
+        <div class="page-footer__logo">
+          <a href="#" class="logo" title="Логотип">
+            <img class="logo__pic" src="img/logo.png" alt="Логотип" width="84" height="34">
+          </a>
+        </div>
+        <div class="page-footer__phone">
+          <a href="tel:+38(066) 83 95 560" class="phone">+38(066) 83 95 560</a>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+              <li class="menu__item"><a href="#" class="menu__link">Характеристики</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="to-top-btn">В начало</a>
       </footer><!-- Footer end -->
 
     </div>
