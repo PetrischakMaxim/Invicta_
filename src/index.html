@@ -3,55 +3,59 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Invicta</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <div class="wrapper">
       <!-- Header -->
       <header class="page-header">
-        <nav class="page-header__nav">
-          <div class="page-header__logo">
-            <a href="#" class="logo" title="Логотип">
-              <img src="img/logo.png" alt="Логотип" class="logo__pic" width="84" height="34">
-            </a>
-          </div>
-          <div class="page-header__phone">
-            <a href="tel:+38(066)8395560" class="phone">+38(066) 83 95 560</a>
-          </div>
-          <nav class="menu">
-            <button class="menu__toggler">Меню</button>
-            <ul class="menu__list">
-              <li class="menu__item"><a href="#" class="menu__link">Характеристики</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
-              <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-            </ul>
-          </nav>
-        </nav>
-        <div class="page-header__main">
-          <div class="page-header__title">
-            <h1 class="page-title">
-              Элитные часы invicta
-            </h1>
-            <p class="page-subtitle">
-              Дарим 10 лет гарантии каждому покупателю
-            </p>
-          </div>
-          <div class="brand">
-            <div class="brand__cover">
-              <p class="brand__name">
-              <span class="brand__text">pro</span>
-              <span class="brand__text brand-text__bordered"><small>6981</small></span>
-              <span class="brand__text">diver</span>
-              </p>
-              <img class="brand__pic" src="img/watch.png" alt="" width="264" height="370">
-              <b class="brand__price">11999грн</b>
-              <del class="brand__price brand__price--old">13999грн</del>
+        <div class="container">
+          <nav class="page-header__nav">
+            <div class="page-header__logo">
+              <a href="#" class="logo" title="Логотип">
+                <img src="img/logo.png" alt="Логотип" class="logo__pic" width="84" height="34">
+              </a>
             </div>
-            <button class="brand__btn page-btn">Заказать</button>
+            <div class="page-header__phone">
+              <a href="tel:+38(066)8395560" class="phone">+38(066) 83 95 560</a>
+            </div>
+            <nav class="menu">
+              <button class="menu__toggler js-menu-toggler">Меню</button>
+              <ul class="menu__list js-menu">
+                <li class="menu__item"><a href="#" class="menu__link menu__link--active">Характеристики</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+              </ul>
+            </nav>
+          </nav>
+          <div class="page-header__main">
+            <div class="page-header__title">
+              <h1 class="page-title">
+                Элитные часы invicta
+              </h1>
+              <span class="page-subtitle">
+                Дарим 10 лет гарантии каждому покупателю
+              </span>
+            </div>
+            <div class="brand">
+              <div class="brand__cover">
+                <div class="brand__wrap">
+                  <div class="brand__name-title"><span class="brand__text">pro</span><br>
+                    <span class="brand__text brand__text--bordered"><small>6981</small></span><br>
+                    <span class="brand__text">diver</span>
+                  </div>
+                  <img class="brand__pic" src="img/watch.png" alt="" width="264" height="370">
+                </div>
+                <b class="brand__price">11999грн</b>
+                <del class="brand__price brand__price--old">13999грн</del>
+              </div>
+              <button class="brand__btn page-btn">Заказать</button>
+            </div>
           </div>
         </div>
       </header><!-- Header end -->
@@ -59,7 +63,7 @@
       <!-- Main -->
       <main class="page-main">
         <section class="features">
-          <h1 class="visually-hidden">Преимущества</h1>
+          <h2 class="visually-hidden">Преимущества</h2>
           <ul class="features__list">
             <li class="features__item"><span class="features__text">Только оригинальный  товар</span></li>
             <li class="features__item"><span class="features__text">Гарантия 10 лет на часы</span></li>
@@ -168,7 +172,7 @@
             </li>
           </ul>
         </section>
-        <setion class="gallery">
+        <section class="gallery">
           <h2 class="section-title">
             Галерея
           </h2>
@@ -193,14 +197,14 @@
           <a href="#" class="gallery__link">
             Показать все
           </a>
-        </setion>
+        </section>
         <section class="company">
           <h2 class="section-title">
             О компании invicta
           </h2>
           <p class="company__descr">Компания имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру,имеет современные мастерские по всему  миру</p>
           <div class="company__video">
-            <iframe width="445" height="312" src="https://www.youtube.com/embed/OeQ8_M_Un5o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OeQ8_M_Un5o"  allowfullscreen></iframe>
           </div>
         </section>
         <section class="reviews">
@@ -270,10 +274,10 @@
           <b class="section-promo section-promo--small">10 лет гарантии  каждому покупателю  </b>
           <div class="benefits__form-wrap">
             <form action="#" class="page-form">
-              <label for="user-name" class="page-form__label">Ваше имя:</label>
-              <input type="text" id="user-name" class="page-form__input" placeholder="Ваше имя" required>
-              <label for="user-phone" class="page-form__label">Ваше имя:</label>
-              <input type="tel" id="user-phone" class="page-form__input" placeholder="Ваш телефон" required>
+              <label for="user-name-order" class="page-form__label">Ваше имя:</label>
+              <input type="text" id="user-name-order" class="page-form__input" placeholder="Ваше имя" required>
+              <label for="user-phone-order" class="page-form__label">Ваше имя:</label>
+              <input type="tel" id="user-phone-order" class="page-form__input" placeholder="Ваш телефон" required>
               <button class="form__btn page-btn" type="submit">Заказать</button>
             </form>
           </div>
@@ -288,7 +292,7 @@
           </a>
         </div>
         <div class="page-footer__phone">
-          <a href="tel:+38(066) 83 95 560" class="phone">+38(066) 83 95 560</a>
+          <a href="tel:+38(066)8395560" class="phone">+38(066) 83 95 560</a>
         </div>
         <nav class="menu">
           <ul class="menu__list">
@@ -302,8 +306,8 @@
       </footer><!-- Footer end -->
 
     </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
   </body>
-  <!-- JavaScript -->
-  <script src="js/jquery-3.3.1.js"></script>
-  <script src="js/main.js"></script>
 </html>
