@@ -6,6 +6,11 @@ var browserSync = require('browser-sync').create();
 var tiny = require('gulp-tinypng-nokey');
 var gcmq = require('gulp-group-css-media-queries');
 
+//Clear cache
+gulp.task('clear', () =>
+    gp.cache.clearAll()
+);
+
 //Sass to css
 gulp.task('sass', function() {
   return gulp.src('src/scss/style.scss')

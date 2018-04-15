@@ -1,19 +1,26 @@
-$min-width: 320px;
+$min-width: 480px;
 $max-width: 1200px;
 $base-bg: #FFF;
-$base-font-size: 13px;
-$base-line-height: 18px;
-$base-font-family: 'Arial', sans-serif;
-$custom-font-family: 'Open Sans', sans-serif;
-$link-color: #100da9;
+$base-fz: 16px;
+$base-lh: 1.42;
+$base-ff: 'Roboto', sans-serif;
+$custom-ff: 'Playfair Display', serif;
+
 $default-transition:all 0.2s linear;
+
+$mobile-width: $min-width;
+$tablet-width: 768px;
+$desktop-width: 992px;
+
 
 /* main variables */
 
 //text, titles
 $text-color: #000;
 $title-color: #000;
-$title-font-family: $custom-font-family;
+$title-ff: $custom-ff;
+$custom-color: #ffae01;
+$link-color: #100da9;
 
 $font-size-h1: 36px;
 $line-height-h1: 42px;

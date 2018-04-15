@@ -1,3 +1,11 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 * {
   box-sizing:border-box;
 }
@@ -8,9 +16,11 @@ body {
 }
 
 body {
-  font-size: 16px;
-  font-family: 'Arial', sans-serif;
-  line-height: 1.42;
+  min-width: $min-width;
+  font-size: $base-fz;
+  font-family: $base-ff;
+  line-height: $base-lh;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -21,17 +31,21 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  margin: 0 auto;
+  min-width: 440px;
+  padding: 0 20px;
+}
+
 header{
-  background: red;
+  flex: 0 0 auto;
 }
 
 main {
   flex: 1 0 auto;
-  background: green;
 }
 
 footer {
-  background: red;
   flex: 0 0 auto;
 }
 
@@ -52,6 +66,7 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #fff;
   &:hover {
     text-decoration: none;
   }
@@ -61,3 +76,61 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+/* Global classes */
+
+.page-title {
+  font-family:$custom-ff;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-subtitle {
+  position: relative;
+  color: #e9e7e7;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 51%;
+    top: 32px;
+    transform:translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: $custom-color;
+  }
+}
+
+.page-btn {
+  display: inline-block;
+  background: $custom-color;
+  text-align: center;
+  padding: 17px 37px;
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.3s;
+
+  &:hover {
+    border-radius: 25px;
+    color: #fff;
+  }
+}
+
+@import "../_blocks/_logo.scss";
+@import "../_blocks/_phone.scss";
+@import "../_blocks/_menu.scss";
+@import "../_blocks/_page-header.scss";
+@import "../_blocks/_brand.scss";
+
+

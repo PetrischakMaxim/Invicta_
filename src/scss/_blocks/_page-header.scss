@@ -1,0 +1,25 @@
+.page-header {
+  padding-bottom: 75px;
+  background-image: linear-gradient(30deg, #141313 0%, #3d3838 100%);
+
+  &__nav {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    padding-top: 18px;
+    flex: 1 1 auto;
+  }
+
+  &__phone {
+    flex: 1 1 auto;
+    margin-left: auto;
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 55px;
+  }
+}
+
