@@ -1,6 +1,7 @@
 .menu {
   margin-left: auto;
 
+
   &__toggler {
     position: relative;
     z-index: 10;
@@ -9,7 +10,6 @@
     margin-top: 26px;
     width: 22px;
     height: 22px;
-
 
     &:before {
       position: absolute;
@@ -46,9 +46,9 @@
     padding-top: 50px;
     top: 0;
     left:0;
-    min-width: 100%;
+    width: 135%;
     height: 70vh;
-    background-color: #2f2b2b;
+    background-color: rgba(#2f2b2b, 0.9);
   }
 
   &__link {
@@ -69,6 +69,8 @@
   &__link--active {
     font-weight: 700;
   }
+
+
 
 }
 

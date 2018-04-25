@@ -1,0 +1,37 @@
+.slider {
+  text-align: center;
+  margin-bottom: 50px;
+
+   &__item {
+      cursor: pointer;
+      border: none;
+      margin: 10px auto 30px auto !important;
+      width: 369px !important;
+      padding: 24px 20px 24px 20px;
+      background-color: white;
+      box-shadow: 0 11px 20.3px 8.7px rgba(0, 0, 0, 0.11);
+      color: black;
+      text-align: center;
+   }
+
+   &__item-logo {
+      display: inline-block;
+      margin-bottom: 25px;
+   }
+
+   &__author {
+    font-weight: bold;
+   }
+
+   &__author-descr {
+    color: #979797;
+    font-size: 13px;
+    font-weight: 400;
+   }
+
+   &__feedback {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+   }
+}

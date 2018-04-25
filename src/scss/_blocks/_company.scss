@@ -1,0 +1,23 @@
+.company {
+
+  &__descr {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    line-height: 1.625;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  &__video  {
+    text-align: center;
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border:none;
+    }
+  }
+}
+
+

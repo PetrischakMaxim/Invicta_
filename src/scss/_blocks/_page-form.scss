@@ -1,0 +1,29 @@
+.page-form {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 700;
+  width: auto;
+
+  &__label {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #737272;
+    padding: 13px 20px;
+    @include placeholder-color(#737272);
+    margin-bottom: 30px;
+
+    &::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+    &::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+    &:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+    &:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+    &:focus::-webkit-input-placeholder {text-indent: -500px; transition: text-indent 0.3s ease;}
+    &:focus::-moz-placeholder          {text-indent: -500px; transition: text-indent 0.3s ease;}
+    &:focus:-moz-placeholder           {text-indent: -500px; transition: text-indent 0.3s ease;}
+    &:focus:-ms-input-placeholder      {text-indent: -500px; transition: text-indent 0.3s ease;}
+  }
+}

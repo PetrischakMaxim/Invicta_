@@ -1,0 +1,13 @@
+.icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  fill: $custom-color;
+  width: 40px;
+  height: 40px;
+
+  &--play {
+    margin-top: 15px;
+
+  }
+}

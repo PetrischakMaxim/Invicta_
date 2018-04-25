@@ -1,0 +1,38 @@
+.benefits {
+  counter-reset: myCounter;
+  padding: 36px 0 56px 0;
+
+  &__title {
+    color: black;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+
+  &__item {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+
+    &::before {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      counter-increment: myCounter;
+      content:counter(myCounter);
+      color: white;
+      background: $custom-color;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      margin-right: 5px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+  }
+}

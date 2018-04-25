@@ -28,5 +28,8 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-tinypng-nokey": "^1.1.0",
     "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "magnific-popup": "^1.1.0"
   }
 }
