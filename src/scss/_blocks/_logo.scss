@@ -1,3 +1,28 @@
 .logo {
   display: block;
+
+  &__name {
+    display: none;
+    color: white;
+    font-family: $custom-ff;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+
+  @include sm {
+    &__pic {
+      width: 98px;
+      height: 40px;
+    }
+
+    &__pic--hiden-sm {
+      display: none;
+    }
+
+    &__name {
+      display: inline;
+    }
+  }
 }

@@ -30,4 +30,30 @@
     font-weight: 400;
     line-height: 30px;
   }
+
+  @include sm {
+    &__inner {
+      flex-wrap: nowrap;
+    }
+
+    &__logo {
+      margin-right: 70px;
+    }
+
+    &__list {
+      justify-content: flex-start;
+    }
+
+    &__menu-item {
+      margin-right: 40px;
+    }
+
+    &__menu-link {
+      font-size: 16px;
+    }
+
+    &__phone {
+      display: none;
+    }
+  }
 }

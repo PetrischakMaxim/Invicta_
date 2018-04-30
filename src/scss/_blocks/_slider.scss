@@ -34,4 +34,10 @@
     line-height: 21px;
     font-weight: 400;
    }
+
+   @include sm {
+     &__item {
+        width: 350px !important;
+     }
+   }
 }

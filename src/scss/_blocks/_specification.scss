@@ -1,0 +1,17 @@
+.specification {
+
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    &__item {
+      flex-basis: 45%;
+
+      &:nth-child(odd) {
+        margin-right: 5%;
+      }
+    }
+  }
+}

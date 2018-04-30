@@ -10,7 +10,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-
   }
 
   &__name-title {
@@ -27,12 +26,18 @@
     font-weight: 900;
     text-transform: uppercase;
 
+    @include md {
+      font-size: 82px;
+    }
+
 
     &--bordered {
       position: relative;
       color: #312f2f;
       font-size: 18px;
       padding-left: 30px;
+
+
       &:before {
         content: "";
         position: absolute;
@@ -44,6 +49,9 @@
         background-color: $custom-color;
       }
 
+      @include md {
+        font-size: 22px;
+      }
     }
   }
 
@@ -51,10 +59,28 @@
     position: relative;
     z-index: 1;
     right: 65px;
+    width: 274px;
+    height: 439px;
+
+    @include sm {
+      right: 50px;
+      width: 293px;
+      height: 459px;
+
+    }
+
+    @include md {
+      right: 105px;
+      width: 379px;
+      height: 615px;
+    }
   }
+}
 
 
-  &__price {
+
+
+.price {
     position: relative;
     top: -33px;
     color: $custom-color;
@@ -69,5 +95,15 @@
       font-weight: 500;
       text-decoration: line-through;
     }
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    display: none;
+
+      &--sm {
+        display: inline-block;
+        position: static;
+      }
   }
 }

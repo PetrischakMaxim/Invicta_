@@ -20,4 +20,10 @@
   &__btn {
     margin-bottom: 60px;
   }
+
+  @include sm {
+    &__descr {
+      padding: 0 50px;
+    }
+  }
 }

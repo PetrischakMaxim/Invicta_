@@ -58,28 +58,6 @@ $(document).ready(function() {
       });
     });
 
-    /*Show more gallery*/
-    $(function() {
-        //var pageWidth= $(window).innerWidth();
-        var linkShowMore = $('.js-show-more');
-        var hiddenContent = $('.gallery__list--hidden');
-        linkShowMore.on('click', function(event) {
-          event.preventDefault();
-          if (!hiddenContent.hasClass('active')) {
-            hiddenContent
-            .addClass('active')
-            .fadeIn()
-            .css('display', 'flex')
-            $(this).html('Скрыть фотографии');
-          } else {
-            hiddenContent
-            .removeClass('active')
-            .fadeOut();
-            $(this).html('Показать все');
-          }
-        });
-    });
-
     /*Slick slider  https://github.com/kenwheeler/slick*/
     $(function() {
       var slider = $('.js-slider-slick');
@@ -88,9 +66,20 @@ $(document).ready(function() {
         autoplay: true,
         dots: true,
         adaptiveHeight: true,
-        arrows: false
+        arrows: false,
 
-      })
+        responsive: [
+
+          {
+            breakpoint: 760,
+            settings: {
+            slidesToShow: 2,
+            dots: true
+            }
+          }
+
+        ]
+      });
 
     });
 

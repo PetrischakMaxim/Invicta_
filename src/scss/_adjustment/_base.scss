@@ -28,9 +28,18 @@ body {
 .container {
   position: relative;
   margin: 0 auto;
-  max-width: 640px;
+  max-width: 720px;
   padding: 0 20px;
   overflow: hidden;
+
+  @include sm {
+    max-width: 960px;
+  }
+
+  @include md {
+    max-width: 1170px;
+    padding: 0 30px;
+  }
 }
 
 header{
@@ -78,6 +87,7 @@ button {
   border: none;
 }
 
+
 /* Libs */
 @import "../_libs/slick.scss";
 @import "../_libs/modal-video.scss";
@@ -97,6 +107,7 @@ button {
 @import "../_blocks/_gallery.scss";
 @import "../_blocks/_company.scss";
 @import "../_blocks/_slider.scss";
+@import "../_blocks/_specification.scss";
 @import "../_blocks/_benefits.scss";
 @import "../_blocks/_page-footer.scss";
 

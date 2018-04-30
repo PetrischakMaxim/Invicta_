@@ -53,26 +53,14 @@
 }
 
 //breakpoints
-@mixin desktop {
-  @media screen and (max-width: 1200px) {
+@mixin md {
+  @media screen and (min-width: $desktop-width) {
     @content;
   }
 }
 
-@mixin laptop {
-  @media screen and (max-width: 992px) {
-    @content;
-  }
-}
-
-@mixin tablet{
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin tablet{
-  @media screen and (max-width: 480px) {
+@mixin sm {
+  @media screen and (min-width: $tablet-width) {
     @content;
   }
 }

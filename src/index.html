@@ -29,17 +29,23 @@
               </a>
             </div>
             <div class="page-header__phone">
-              <a href="tel:+38(066)8395560" class="phone">+38(066) 83 95 560</a>
+              <a href="tel:+38(066)8395560" class="phone">
+                <img src="img/smartphone-call.png" width="24" height="24"
+               alt="">
+                +38(066) 83 95 560</a>
+                <a href="#popup-modal" class="page-btn page-btn--md js-popup-btn">Заказать звонок</a>
             </div>
-            <nav class="menu">
-              <button class="menu__toggler js-menu-toggler">Меню</button>
-              <ul class="menu__list js-menu">
-                <li class="menu__item"><a href="#characteristics" class="menu__link menu__link--active">Характеристики</a></li>
-                <li class="menu__item"><a href="#about" class="menu__link">О компании</a></li>
-                <li class="menu__item"><a href="#delivery" class="menu__link">Доставка</a></li>
-                <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
-              </ul>
-            </nav>
+            <div class="page-header__menu">
+              <nav class="menu">
+                <button class="menu__toggler js-menu-toggler">Меню</button>
+                <ul class="menu__list js-menu">
+                  <li class="menu__item"><a href="#characteristics" class="menu__link menu__link--active">Характеристики</a></li>
+                  <li class="menu__item"><a href="#about" class="menu__link">О компании</a></li>
+                  <li class="menu__item"><a href="#delivery" class="menu__link">Доставка</a></li>
+                  <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
+                </ul>
+              </nav>
+            </div>
           </nav>
           <div class="page-header__main">
             <div class="page-header__title">
@@ -49,6 +55,17 @@
               <span class="page-subtitle">
                 Дарим 10 лет гарантии каждому покупателю
               </span>
+              <p class="page-header__descr">
+                Оригинальные швейцарские часы invicta
+                pro diver 6981 являются уникальными:
+                они сочетают непревзойденное качество
+                с относительно невысокой ценой.
+              </p>
+              <div class="page-header__price">
+                <b class="price price--sm">11999грн</b>
+                <del class="price price--sm price--old">13999грн</del>
+              </div>
+              <a class="page-btn page-btn--sm js-popup-btn" href="#popup-modal">Заказать</a>
             </div>
             <div class="brand">
               <div class="brand__cover">
@@ -59,10 +76,10 @@
                 </div>
                 <img class="brand__pic" src="img/watch.png" alt="" width="264" height="370">
               </div>
-              <b class="brand__price">11999грн</b>
-              <del class="brand__price brand__price--old">13999грн</del>
+              <b class="price">11999грн</b>
+              <del class="price price--old">13999грн</del>
             </div>
-            <a class="page-btn js-popup-btn" href="#popup-modal">Заказать</a>
+            <a class="page-btn page-btn--hidden-sm js-popup-btn" href="#popup-modal">Заказать</a>
           </div>
         </div>
       </div>
@@ -112,7 +129,7 @@
             </li>
           </ul>
           <div class="about__video">
-            <a class="about__video-link js-popup-youtube" data-video-id='KunL0j36V_c' >
+            <a class="about__video-link js-popup-youtube" data-video-id='KunL0j36V_c'>
               <span>Смотреть обзор</span>
               <svg class="icon icon--play">
                 <use xlink:href="#play-button" />
@@ -139,7 +156,7 @@
               Invicta Pro Diver воплощает  трендовые направление — Sport de Luxe.Часы марки Invicta имеют десятилетнюю международную гарантию и производятся на территории Швейцарии.
             </li>
           </ul>
-          <img class="section__image" src="img/section-images/section-watch_01.png" width="465" height="276" alt="">
+          <img class="section__image section__image--big" src="img/section-images/section-watch_01.png" width="465" height="276" alt="">
         </div>
       </section>
       <section class="section section--imaged section--dark about">
@@ -184,60 +201,60 @@
           <h2 class="section-title">
           Часы Invicta Продуманые до мелочей
           </h2>
-          <ul class="about__descr">
-            <li class="section-text section-text--bordered">
+          <ul class="about__descr specification">
+            <li class="section-text section-text--bordered specification__item">
               <h4 class="section-text__title section-text__title--iconed">
               <svg class="icon">
                 <use xlink:href="#settings"/>
               </svg>
               Тип механизма
               </h4>
-              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+              Кварцевый японский Seiko VD53  механизм с хронографом
             </li>
-            <li class="section-text section-text--bordered">
+            <li class="section-text section-text--bordered specification__item">
               <h4 class="section-text__title section-text__title--iconed">
               <svg class="icon">
                 <use xlink:href="#shield"/>
               </svg>
               Тип стекла
               </h4>
-              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+              Минеральное, стекло Flame Fusion.  Водозащита: 100 метров
             </li>
-            <li class="section-text section-text--bordered">
+            <li class="section-text section-text--bordered specification__item">
               <h4 class="section-text__title section-text__title--iconed">
               <svg class="icon">
                 <use xlink:href="#time"/>
               </svg>
               Материал корпуса
               </h4>
-              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+              Нерж. сталь, покрытие: позолота (кроме задней крышки)
             </li>
-            <li class="section-text section-text--bordered">
+            <li class="section-text section-text--bordered specification__item">
               <h4 class="section-text__title section-text__title--iconed">
               <svg class="icon">
                 <use xlink:href="#watch-strap"/>
               </svg>
               Материал браслета
               </h4>
-              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+              Размер корпуса: 48мм/17мм, длина  браслета: 240мм. Вес: 196грам
             </li>
-            <li class="section-text section-text--bordered">
+            <li class="section-text section-text--bordered specification__item">
               <h4 class="section-text__title section-text__title--iconed">
               <svg class="icon">
                 <use xlink:href="#resize"/>
               </svg>
               Габариты
               </h4>
-              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+              Нерж. сталь + каучук, покрытие: позолота (частичное)
             </li>
-            <li class="section-text section-text--bordered">
+            <li class="section-text section-text--bordered specification__item">
               <h4 class="section-text__title section-text__title--iconed">
               <svg class="icon">
                 <use xlink:href="#technology"/>
               </svg>
               Функции
               </h4>
-              Спортивный стиль часов ярко демонстрирует прочный браслет, крепкий циферблат и надежный часовый механизм. В то же время модель снабжена элементами, которые относятся к классу Luxury
+              Часы / дата / хронограф / подсветка.
             </li>
           </ul>
         </div>
@@ -247,43 +264,17 @@
           <h2 class="section-title section-title--dark">
           Галерея
           </h2>
-          <ul class="gallery__list gallery__list--show">
-            <li class="gallery__foto gallery__foto--big">
-              <img src="img/gallery/01.jpg" alt="" class="gallery__img" width="455" height="337">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/02.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/03.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/04.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/05.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-          </ul>
-          <ul class="gallery__list gallery__list--hidden">
-            <li class="gallery__foto gallery__foto--big">
-              <img src="img/gallery/01.jpg" alt="" class="gallery__img" width="455" height="337">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/02.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/03.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/04.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-            <li class="gallery__foto">
-              <img src="img/gallery/05.jpg" alt="" class="gallery__img" width="217" height="185">
-            </li>
-          </ul>
-          <a href="#" class="gallery__link js-show-more">
-            Показать все
-          </a>
+          <div class="fotorama" data-width="100%"
+            data-height="100%"  data-ratio="800/600" data-minwidth="400" data-maxwidth="1000" data-minheight="300" data-maxheight="100%" data-nav="thumbs" data-allowfullscreen="true">
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+            <a href="img/gallery/01.jpg"><img src="img/gallery/01.jpg" alt=""></a>
+          </div>
         </div>
       </section>
       <section class="section company" id="about">
@@ -291,7 +282,11 @@
           <h2 class="section-title section-title--dark">
           О компании invicta
           </h2>
-          <p class="company__descr">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Составитель повстречался родного инициал парадигматическая на берегу имеет над но скатился до заманивший, жаренные за подзаголовок текстов моей своего, эта вскоре встретил, вершину буквоград предупредила страну пустился! Образ переулка бросил одна, города великий раз, путь но всеми гор грустный рекламных снова.</p>
+          <p class="company__descr">Компания имеет современные мастерские по всему миру, которые
+            используют современные технологии, оборудование для тестирования,
+            научных разработок. Непрерывно компания внедряет новые технологии
+            и новые продукты. На сегодняшний день компания стала  отечественным
+          профессиональным производителем часов и технологий.</p>
           <div class="company__video">
             <iframe src="https://www.youtube.com/embed/GOpkV-E5o5o" allowfullscreen></iframe>
           </div>
@@ -344,7 +339,7 @@
               </blockquote>
             </li>
           </ul>
-          <button class="page-btn page-btn--centered page-btn--colored">Оставить отзыв</button>
+          <a class="page-btn page-btn--centered page-btn--colored js-popup-btn" href="#popup-modal">Оставить отзыв</a>
         </div>
       </section>
       <section class="section" id="delivery">
@@ -352,42 +347,48 @@
           <h2 class="section-title section-title--dark">
           Как мы работаем
           </h2>
-          <h4 class="section-promo">
-          <span>
-            <svg class="icon icon--truck">
-              <use xlink:href="#truck" />
-            </svg>
-          </span>
-          Бесплатная доставка по всей Украине
-          </h4>
-          <ol class="benefits">
-            <li class="benefits__title">
-              Как происходит заказ:
-              <li>
-                <li class="benefits__item">
-                  Покупатель оставляет заявку
-                </li>
-                <li class="benefits__item">
-                  С ним связывается менеджер, консультирует  по товару
-                </li>
-                <li class="benefits__item">
-                  Товар отправляется почтой
-                </li>
-                <li class="benefits__item">
-                  Вы получаете качественный товар
-                </li>
-              </ol>
-              <h4 class="section-promo section-promo--small">
-              <span>+</span>10 лет гарантии  каждому покупателю
+          <div class="section__inner">
+            <div class="section__block section__block--centered">
+              <h4 class="section-promo">
+              <span>
+                <svg class="icon icon--truck">
+                  <use xlink:href="#truck" />
+                </svg>
+              </span>
+              Бесплатная доставка по всей Украине
               </h4>
-              <div class="section__form-wrap section__form-wrap--centered-with-shadow">
-                <form action="#" class="page-form js-page-form2">
-                  <label class="page-form__label">Ваше имя:</label>
-                  <input type="text" name="user_name" class="page-form__input" placeholder="Ваше имя" required>
-                  <label class="page-form__label">Ваше имя:</label>
-                  <input type="tel" name="user_phone" class="page-form__input" placeholder="Ваш телефон" required>
-                  <button class="page-btn page-btn--centered" type="submit">Заказать</button>
-                </form>
+              <ol class="benefits">
+                <li class="benefits__title">
+                  Как происходит заказ:
+                  <li>
+                    <li class="benefits__item">
+                      Покупатель оставляет заявку
+                    </li>
+                    <li class="benefits__item">
+                      С ним связывается менеджер, консультирует  по товару
+                    </li>
+                    <li class="benefits__item">
+                      Товар отправляется почтой
+                    </li>
+                    <li class="benefits__item">
+                      Вы получаете качественный товар
+                    </li>
+                  </ol>
+                </div>
+                <div class="section__block">
+                  <h4 class="section-promo section-promo--small section-promo--sm">
+                  <span>+</span>10 лет гарантии  каждому покупателю
+                  </h4>
+                  <div class="section__form-wrap section__form-wrap--centered-with-shadow">
+                    <form action="#" class="page-form js-page-form2">
+                      <label class="page-form__label">Ваше имя:</label>
+                      <input type="text" name="user_name" class="page-form__input" placeholder="Ваше имя" required>
+                      <label class="page-form__label">Ваше имя:</label>
+                      <input type="tel" name="user_phone" class="page-form__input" placeholder="Ваш телефон" required>
+                      <button class="page-btn page-btn--centered" type="submit">Заказать</button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -399,7 +400,8 @@
             <div class="page-footer__inner">
               <div class="page-footer__logo">
                 <a href="#" class="logo" title="Логотип">
-                  <img class="logo__pic" src="img/logo.png" alt="Логотип" width="84" height="34">
+                  <img class="logo__pic logo__pic--hiden-sm" src="img/logo.png" alt="Логотип" width="84" height="34">
+                  <span class="logo__name">Invicta</span>
                 </a>
               </div>
               <div class="page-footer__phone">
@@ -690,5 +692,8 @@
               <script src="js/slick.js"></script>
               <script src="js/jquery-modal-video.js"></script>
               <script src="js/main.js"></script><!-- JavaScript end-->
+              <!-- fotorama.css & fotorama.js. -->
+              <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+              <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
             </body>
           </html>

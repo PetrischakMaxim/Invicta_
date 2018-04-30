@@ -10,7 +10,12 @@
   &__text {
     font-size: 15px;
     font-weight: 700;
-    line-height: 20px;
+  }
 
+  @include sm {
+
+    &__text {
+      font-size: 16px;
+    }
   }
 }

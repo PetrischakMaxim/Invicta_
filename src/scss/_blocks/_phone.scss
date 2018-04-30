@@ -3,4 +3,24 @@
   font-weight: 700;
   line-height: 70px;
   text-transform: uppercase;
+
+  img {
+    display: none;
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  @include sm {
+    font-size: 18px;
+  }
+
+  @include md {
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
 }
