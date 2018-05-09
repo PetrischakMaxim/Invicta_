@@ -7,6 +7,9 @@
 
   &__video {
     text-align: center;
+    @include md {
+      display: none;
+    }
 
     &-link {
       display: inline-block;
@@ -24,6 +27,61 @@
   @include sm {
     &__descr {
       padding: 0 50px;
+    }
+  }
+
+  @include md {
+
+    &__descr {
+      padding: 0;
+    }
+
+    &__descr--right {
+      margin-left: 50%;
+      text-align: left;
+    }
+
+    &__descr--left {
+      position: relative;
+      text-align: left;
+      max-width: 800px;
+
+    }
+
+    &__descr--bordered  {
+      padding-left: 50px;
+      border-left: 2px solid $custom-color;
+    }
+
+    &--left {
+      text-align: left;
+    }
+
+  }
+}
+
+
+.video {
+  display: none;
+
+  @include md {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 70px;
+      margin-right: 16px;
+    }
+
+    a {
+      cursor: pointer;
+
+      .icon {
+        width: 36px;
+        height: 36px;
+      }
     }
   }
 }

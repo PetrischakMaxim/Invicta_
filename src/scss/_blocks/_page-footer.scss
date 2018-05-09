@@ -25,7 +25,7 @@
 
   &__menu-link {
     color: #eee;
-    font-family: 'Roboto';
+    font-family: $base-ff;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -50,10 +50,22 @@
 
     &__menu-link {
       font-size: 16px;
+      font-family: $base-ff;
     }
 
     &__phone {
       display: none;
+    }
+  }
+
+  @include md {
+
+    &__inner {
+      justify-content: space-between;
+    }
+
+    &__logo {
+      min-width: 124px;
     }
   }
 }

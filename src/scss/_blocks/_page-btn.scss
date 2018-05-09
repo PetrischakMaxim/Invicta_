@@ -1,0 +1,67 @@
+.page-btn {
+  display: inline-block;
+  background: $custom-color;
+  text-align: center;
+  padding: 17px 37px;
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    border-radius: 25px;
+    color: #fff;
+    outline-color: transparent;
+  }
+
+  &--colored {
+    background-color: transparent;
+    color: $custom-color;
+    border: 2px solid $custom-color;
+
+    &:hover {
+      background:$custom-color;
+      color: black;
+    }
+  }
+
+  &--centered {
+
+
+    @include md {
+      max-width: 250px;
+      display: block;
+    margin: 0 auto;
+    }
+  }
+
+  &--sm {
+    display: none;
+  }
+
+  &--md {
+    display: none;
+  }
+
+  @include sm {
+    &--sm {
+      display: block;
+      order: 5;
+    }
+
+    &--hidden-sm {
+      display: none;
+    }
+  }
+
+  @include md {
+    &--md {
+      color: $custom-color;
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: transparent;
+      border: 2px solid $custom-color;
+    }
+  }
+}

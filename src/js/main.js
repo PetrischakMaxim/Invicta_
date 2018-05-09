@@ -76,6 +76,15 @@ $(document).ready(function() {
             slidesToShow: 2,
             dots: true
             }
+          },
+
+          {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 3,
+            dots: true,
+            arrows: true
+            }
           }
 
         ]
@@ -165,5 +174,4 @@ $(document).ready(function() {
           }, 750);
         });
     });
-
 });

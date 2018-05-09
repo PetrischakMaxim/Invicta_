@@ -121,40 +121,85 @@
   display: block;
   margin: 0 auto;
   text-align: center;
+
     li {
         display: inline-block;
-        vertical-align: middle;
         width: 10px;
         height: 10px;
         border-radius: 50%;
         margin-right: 10px;
         background-color: transparent;
         color: transparent;
+
+        &:after {
+          @include pseudo();
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #d1d1d1;
+        }
     }
 
     .slick-active {
 
-        button {
-            background: #000;
-            outline: none;
+        &:after {
+          background: #000;
         }
     }
 
     button {
-        width: 10px;
-        height: 10px;
-        background-color: #d1d1d1;
-        color: transparent;
-        border-radius: 50%;
-        transition: all 0.3s;
-
-        &:hover,
-        &:active
-         {
-            background: #000;
-            outline: none;
-        }
-
-
+      background-color: transparent;
+      font-size: 0;
     }
+}
+
+.slick-arrow {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  background-color: transparent;
+  font-size: 0;
+  cursor: pointer;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  @include trs();
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.slick-prev {
+  right: 100px;
+
+  &:before {
+    position: absolute;
+    content:'';
+    display: block;
+    width: 0;
+    height: 0;
+    right: 0px;
+    border-style: solid;
+    border-width: 15px 26.0px 15px 0;
+    border-color: transparent #0d0e0f transparent transparent;
+  }
+
+
+}
+.slick-next {
+
+  &:after {
+    @include pseudo();
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 26.0px;
+    border-color: transparent transparent transparent #0d0e0f;
+  }
+
 }

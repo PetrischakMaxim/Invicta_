@@ -1,4 +1,5 @@
 .company {
+  padding-bottom: 0;
 
   &__descr {
     font-size: 16px;
@@ -7,10 +8,34 @@
     text-align: center;
     font-weight: bold;
     margin-bottom: 50px;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    @include md {
+      float: right;
+      width: 50%;
+      font-size: 16px;
+      text-align: left;
+      padding-top: 60px;
+      padding-left: 80px;
+      font-weight: 400;
+    }
   }
 
   &__video  {
     text-align: center;
+
+    @include md {
+      float: left;
+      width: 50%;
+      iframe {
+        max-width: 670px;
+        height: 336px;
+      }
+    }
 
     iframe {
       width: 100%;

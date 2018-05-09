@@ -8,6 +8,7 @@
   &__label {
     display: block;
     margin-bottom: 15px;
+
   }
 
   &__input {
@@ -26,20 +27,17 @@
     &:focus::-moz-placeholder          {text-indent: -500px; transition: text-indent 0.3s ease;}
     &:focus:-moz-placeholder           {text-indent: -500px; transition: text-indent 0.3s ease;}
     &:focus:-ms-input-placeholder      {text-indent: -500px; transition: text-indent 0.3s ease;}
+
+    @include md {
+      max-width: 500px;
+    }
   }
 
-  .error {
-    margin-top: -5px;
-    font-size: 14px;
-    font-style: italic;
-    font-family:$base-ff;
-    color: red;
-    text-transform: uppercase;
-  }
+
 
   @include sm {
     .page-form {
-      font-size: 15px;
+      font-size: 16px;
     }
   }
 }

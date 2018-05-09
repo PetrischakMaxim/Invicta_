@@ -14,4 +14,16 @@
       }
     }
   }
+
+  @include md {
+    justify-content: space-between;
+    padding: 0;
+    text-align: left;
+
+    &__item {
+      padding-left: 50px;
+      max-width: 325px;
+      margin-right: 25px;
+    }
+  }
 }

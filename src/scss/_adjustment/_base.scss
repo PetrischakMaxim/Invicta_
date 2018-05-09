@@ -39,6 +39,21 @@ body {
   @include md {
     max-width: 1170px;
     padding: 0 30px;
+
+
+    &--bg {
+      background-image:url('../img/section-md-about.png'), linear-gradient(30deg, #2c2828 0%, #141313 100%);
+      background-repeat: no-repeat, repeat;
+      background-size: contain,cover;
+      background-position: right center, center;
+    }
+
+    &--bg-center {
+      background-image:url('../img/md-bg--center.png');
+      background-repeat: no-repeat;
+      background-size: 120%;
+      background-position: 50% 56%;
+    }
   }
 }
 
@@ -100,8 +115,10 @@ button {
 @import "../_blocks/_logo.scss";
 @import "../_blocks/_phone.scss";
 @import "../_blocks/_menu.scss";
+@import "../_blocks/_page-btn.scss";
 @import "../_blocks/_brand.scss";
 @import "../_blocks/_features.scss";
+@import "../_blocks/_section.scss";
 @import "../_blocks/_about.scss";
 @import "../_blocks/_page-form.scss";
 @import "../_blocks/_gallery.scss";
